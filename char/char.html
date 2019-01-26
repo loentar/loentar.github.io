@@ -1,0 +1,154 @@
+<html class="mdl-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="pixi.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let w = 1024;
+            let h = 728;
+            let docRatio = window.innerWidth / window.innerHeight;
+            let renderer = new PIXI.WebGLRenderer(w, h);
+
+            document.body.appendChild(renderer.view);
+
+            let stage = new PIXI.Container();
+            let container = new PIXI.Container();
+            let foreground = new PIXI.Container();
+            stage.addChild(container);
+            stage.addChild(foreground);
+
+            let char;
+            let bg;
+
+            PIXI.loader.add('bg', 'bg.jpg').load(function (loader, resources) {
+                bg = new PIXI.Sprite(resources['bg'].texture);
+                bg.position.x = w / 2;
+                bg.position.y = h / 2;
+                bg.scale.x = 1.1;
+                bg.scale.y = 1.1;
+                bg.pivot.x = bg.width / 2;
+                bg.pivot.y = bg.height / 2;
+                container.addChild(bg);
+            });
+
+            let sweetKinds = 3;
+            let sweetCountPerKind = 2;
+            let sweets = [];
+            for (let s = 0; s < sweetKinds; ++s) {
+                let id = 'sweet' + (s + 1);
+                PIXI.loader.add(id, id + '.png').load(function (loader, resources) {
+                    let shadow = new PIXI.filters.DropShadowFilter();
+                    shadow.distance = 0;
+                    shadow.blur = 20;
+
+                    for (let i = 0; i < sweetCountPerKind; i++) {
+                        let sweet = new PIXI.Sprite(resources[id].texture);
+                        sweet.position.y = Math.random() * 350;
+                        sweet.pivot.x = sweet.width / 2;
+                        sweet.pivot.y = sweet.height / 2;
+                        sweet.scale.x = 0.4;
+                        sweet.scale.y = 0.5;
+                        sweet.filters = [shadow];
+
+                        sweets[s * sweetCountPerKind + i] = sweet;
+                        foreground.addChild(sweet);
+                    }
+                });
+            }
+
+            PIXI.loader.add('char', 'char.png').load(function (loader, resources) {
+                char = new PIXI.Sprite(resources['char'].texture);
+                char.pivot.x = char.width / 2;
+                char.pivot.y = char.height * 0.9;
+                char.position.x = w / 2;
+                char.position.y = h * 0.97;
+                char.scale.x = w / char.width * 0.67 / docRatio;
+                char.scale.y = h / char.height * 0.67;
+                foreground.addChild(char);
+            });
+
+
+            let charDisp;
+            let charFilter;
+            let mouseX = w / 2;
+            let mouseY = h / 2;
+            PIXI.loader.add('char_displacement', 'char-displacement.png').load(function (loader, resources) {
+                charDisp = new PIXI.Sprite(resources['char_displacement'].texture);
+                charFilter = new PIXI.filters.DisplacementFilter(charDisp, 0);
+                char.filters = [charFilter];
+                char.addChild(charDisp);
+
+                window.onmousemove = function (e) {
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                };
+            });
+
+
+            let bgDisp;
+            let bgDispFilter;
+            PIXI.loader.add('bg_displacement', 'bg-displacement.jpg').load(function (loader, resources) {
+                bgDisp = new PIXI.Sprite(resources['bg_displacement'].texture);
+                bgDispFilter = new PIXI.filters.DisplacementFilter(bgDisp, 40);
+
+                bgDisp.scale.x = 2;
+                bgDisp.scale.y = 2;
+
+                let bgRgbFilter = new PIXI.filters.RGBSplitFilter();
+                bgRgbFilter.red.x = -2;
+                bgRgbFilter.red.y = 2;
+                bgRgbFilter.green.x = 0;
+                bgRgbFilter.green.y = 0;
+                bgRgbFilter.blue.x = 2;
+                bgRgbFilter.blue.y = -2;
+
+                container.filters = [bgRgbFilter, bgDispFilter];
+                container.addChild(bgDisp);
+            });
+
+            let brightness = new PIXI.filters.ColorMatrixFilter();
+            brightness.brightness(0.75, 1);
+            let bloom = new PIXI.filters.BloomFilter();
+            stage.filters = [brightness, bloom];
+
+            function animate() {
+                requestAnimationFrame(animate);
+
+                let date = Date.now();
+
+                bgDisp.position.x = 200 * Math.sin(date / 1200);
+                bgDisp.position.y = 200 * Math.cos(date / 1200);
+
+                bgDispFilter.scale.x = 170 * Math.sin(date / 1100);
+                bgDispFilter.scale.y = 170 * Math.cos(date / 1070);
+
+                bg.rotation = 0.1 * Math.sin(date / 10000);
+                char.rotation = 0.01 * Math.cos(date / 1000);
+
+                for (let i = 0; i < sweets.length; i++) {
+                    sweets[i].position.x = ((date / (25 + i) + i * w)) % (w * 2) - 400;
+                    sweets[i].position.y = 100 * Math.sin(i + date / 5000) + 150;
+                    sweets[i].rotation = Math.sign(i - 1.5) * date / (2500 + 300 * i);
+                }
+
+                charFilter.scale.x = (window.innerWidth / 2 - mouseX) / 150 + 6 * Math.sin(date / 1000);
+                charFilter.scale.y = (window.innerHeight / 2 - mouseY) / 100 + 6 * Math.cos(date / 1200);
+
+                renderer.render(stage);
+            }
+
+            PIXI.loader.once('complete', animate);
+        }
+    </script>
+</html>
