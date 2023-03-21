@@ -26,6 +26,11 @@ function loadText(url, onSuccess, onError) {
     xhr.onreadystatechange = ((response) => {
         return () => {
             if (response.readyState === 4) {
+                if (response.status !== 200) {
+                    onError()
+                    return
+                }
+
                 try {
                     onSuccess(response.responseText)
                 } catch(e) {

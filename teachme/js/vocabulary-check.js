@@ -51,6 +51,7 @@ function showNextWord() {
 
     let words = [word]
     for (let a = 0; a < MAX_RESULTS; ++a) {
+        if (variants.length === 0) break
         let variantIndex = randomInt(variants.length)
         let variant = variants[variantIndex]
         if (words.indexOf(variant) !== -1) {

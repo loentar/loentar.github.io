@@ -2,16 +2,19 @@
 
 cd ../db
 
-echo -n >.index
+echo -n >_index
 for dir in $(find * -type d)
 do
   cd $dir
-  echo -n >.index
+  echo -n >_index
   for file in *
   do
-    title=$(head -1 $file)
-    echo "$file $title" >>.index
+    if [ "$file" != "_index" ]
+    then
+      title=$(head -1 $file)
+      echo "$file $title" >>_index
+    fi
   done
   cd -
-  echo $dir >> .index
+  echo $dir >> _index
 done
