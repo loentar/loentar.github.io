@@ -1,6 +1,7 @@
 DISTFILES += \
     css/common.css \
-    db/_index \
+    db/_content \
+    db/vocabulary/_content \
     db/vocabulary/zodiac \
     db/vocabulary/verbs2 \
     db/vocabulary/answer \
@@ -12,7 +13,6 @@ DISTFILES += \
     db/vocabulary/occupations \
     db/vocabulary/every \
     db/vocabulary/great \
-    db/vocabulary/_index \
     db/vocabulary/misc \
     db/vocabulary/slang \
     db/vocabulary/morning \
@@ -34,7 +34,7 @@ DISTFILES += \
     db/vocabulary/term \
     db/vocabulary/weekdays \
     db/articles/dishes \
-    db/articles/_index \
+    db/articles/_content \
     db/articles/genko_itti \
     db/articles/just_now \
     index.html \

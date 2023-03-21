@@ -2,19 +2,22 @@
 
 cd ../db
 
-echo -n >_index
+# gitlab blocks _index and .index files
+index=_content
+
+echo -n >$index
 for dir in $(find * -type d)
 do
   cd $dir
-  echo -n >_index
+  echo -n >$index
   for file in *
   do
-    if [ "$file" != "_index" ]
+    if [ "$file" != "$index" ]
     then
       title=$(head -1 $file)
-      echo "$file $title" >>_index
+      echo "$file $title" >>$index
     fi
   done
   cd -
-  echo $dir >> _index
+  echo $dir >> $index
 done

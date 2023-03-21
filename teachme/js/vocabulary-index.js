@@ -1,6 +1,6 @@
 
 onReady(() => {
-    loadText(learnUrl + "/_index",
+    loadText(learnUrl + "/_content",
         (response) => {
             parseIndex(response)
         },
