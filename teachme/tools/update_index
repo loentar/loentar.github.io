@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd ../db
+
+echo -n >.index
+for dir in $(find * -type d)
+do
+  cd $dir
+  echo -n >.index
+  for file in *
+  do
+    title=$(head -1 $file)
+    echo "$file $title" >>.index
+  done
+  cd -
+  echo $dir >> .index
+done

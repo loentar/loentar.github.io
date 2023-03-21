@@ -1,0 +1,48 @@
+input[type=button] {
+    padding: .5em;
+    min-height: 3em;
+    min-width: 4em;
+    border-radius: 0.3em;
+    background-color: #e7e5e7;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+input[type=button]:hover:!disabled {
+    background-color: #efedef;
+}
+
+input[type=button]:disabled,input[type=button][disabled]  {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.success {
+    background-color: #99dd9a !important;
+}
+
+.failure {
+    background-color: #ff6158 !important;
+}
+
+#kanji {
+    font-size: 4em;
+}
+
+#kana {
+    font-size: 1.3em;
+}
+
+#description {
+    color: gray;
+}
+
+
+@media screen and (max-width: 800px) {
+    input[type=button] {
+        padding-left: .2em;
+        padding-right: .2em;
+    }
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+cd ..
+
+(
+  echo "DISTFILES += \\"
+  find * -type f | grep -v '\.pro\.user$' | sed 's/^.*$/    & \\/g'
+) > teachme.pro
