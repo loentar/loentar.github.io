@@ -1,6 +1,6 @@
 
 onReady(() => {
-    loadText(learnUrl + "/_content",
+    loadText("db/vocabulary.index",
         (response) => {
             parseIndex(response)
         },

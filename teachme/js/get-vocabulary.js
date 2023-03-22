@@ -1,7 +1,7 @@
 
 function getVocabulary(onSuccess, onError) {
     console.log(JSON.stringify(query))
-    loadText(learnUrl + "/" + query.index,
+    loadText("db/vocabulary/" + query.index,
         response => {
             onSuccess(parseVocabulary(response))
         },

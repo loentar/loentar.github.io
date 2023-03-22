@@ -1,52 +1,52 @@
 DISTFILES += \
     css/common.css \
-    db/_content \
-    db/vocabulary/_content \
-    db/vocabulary/zodiac \
-    db/vocabulary/verbs2 \
-    db/vocabulary/answer \
+    db/articles/dishes \
+    db/articles/genko_itti \
+    db/articles.index \
+    db/articles/just_now \
     db/vocabulary/actions \
-    db/vocabulary/interaction \
-    db/vocabulary/time \
-    db/vocabulary/verbs3 \
-    db/vocabulary/nouns1 \
-    db/vocabulary/occupations \
+    db/vocabulary/answer \
+    db/vocabulary/birds \
+    db/vocabulary/body_parts1 \
+    db/vocabulary/body_parts2 \
     db/vocabulary/every \
+    db/vocabulary/food \
     db/vocabulary/great \
+    db/vocabulary.index \
+    db/vocabulary/insects \
+    db/vocabulary/interaction \
+    db/vocabulary/lexicon \
     db/vocabulary/misc \
-    db/vocabulary/slang \
     db/vocabulary/morning \
     db/vocabulary/nature \
-    db/vocabulary/sayings \
-    db/vocabulary/relax \
-    db/vocabulary/phrases1 \
-    db/vocabulary/birds \
-    db/vocabulary/lexicon \
-    db/vocabulary/phrases \
-    db/vocabulary/body_parts \
-    db/vocabulary/food \
-    db/vocabulary/question \
-    db/vocabulary/verbs1 \
-    db/vocabulary/insects \
-    db/vocabulary/weather \
+    db/vocabulary/nouns1 \
     db/vocabulary/nouns2 \
+    db/vocabulary/occupations \
+    db/vocabulary/phrases \
+    db/vocabulary/phrases1 \
+    db/vocabulary/question \
+    db/vocabulary/relax \
     db/vocabulary/repeat \
+    db/vocabulary/sayings \
+    db/vocabulary/slang \
     db/vocabulary/term \
+    db/vocabulary/time \
+    db/vocabulary/verbs1 \
+    db/vocabulary/verbs2 \
+    db/vocabulary/verbs3 \
+    db/vocabulary/weather \
     db/vocabulary/weekdays \
-    db/articles/dishes \
-    db/articles/_content \
-    db/articles/genko_itti \
-    db/articles/just_now \
+    db/vocabulary/zodiac \
     index.html \
-    js/vocabulary-check.js \
-    js/get-vocabulary.js \
-    js/vocabulary-learn.js \
     js/common.js \
+    js/get-vocabulary.js \
+    js/vocabulary-check.js \
     js/vocabulary-index.js \
+    js/vocabulary-learn.js \
     teachme.pro \
-    tools/update_pro \
     tools/start_server \
     tools/update_index \
+    tools/update_pro \
     vocabulary-check.html \
     vocabulary-index.html \
     vocabulary-learn.html \

@@ -6,5 +6,8 @@ cd ..
 
 (
   echo "DISTFILES += \\"
-  find * -type f | grep -v '\.pro\.user$' | sed 's/^.*$/    & \\/g'
+  find * -type f \
+    | grep -v '\.pro\.user$' \
+    | sed 's/^.*$/    & \\/g' \
+    | sort
 ) > teachme.pro

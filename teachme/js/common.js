@@ -1,5 +1,3 @@
-const learnUrl = "db/vocabulary"
-
 function onReady(callback) {
     document.addEventListener("DOMContentLoaded", callback)
 }
