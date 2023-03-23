@@ -9,6 +9,8 @@ DISTFILES += \
     db/vocabulary/birds \
     db/vocabulary/body_parts1 \
     db/vocabulary/body_parts2 \
+    db/vocabulary/body_parts3 \
+    db/vocabulary/body_parts4 \
     db/vocabulary/every \
     db/vocabulary/food \
     db/vocabulary/great \
@@ -17,6 +19,7 @@ DISTFILES += \
     db/vocabulary/interaction \
     db/vocabulary/lexicon \
     db/vocabulary/misc \
+    db/vocabulary/misc2 \
     db/vocabulary/morning \
     db/vocabulary/nature \
     db/vocabulary/nouns1 \
@@ -34,6 +37,7 @@ DISTFILES += \
     db/vocabulary/verbs1 \
     db/vocabulary/verbs2 \
     db/vocabulary/verbs3 \
+    db/vocabulary/verbs4 \
     db/vocabulary/weather \
     db/vocabulary/weekdays \
     db/vocabulary/zodiac \
@@ -44,6 +48,7 @@ DISTFILES += \
     js/vocabulary-index.js \
     js/vocabulary-learn.js \
     teachme.pro \
+    tools/check_db \
     tools/start_server \
     tools/update_index \
     tools/update_pro \

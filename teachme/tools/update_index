@@ -8,11 +8,8 @@ do
     cd $dir
     for file in *
     do
-      if [ "$file" != "$index" ]
-      then
-        title=$(head -1 $file)
-        echo "$file $title"
-      fi
+      title=$(head -1 $file)
+      echo "$file $title"
     done
     cd - &> /dev/null
   ) > $dir.index

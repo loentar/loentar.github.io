@@ -1,0 +1,52 @@
+#!/bin/bash
+
+cd ../db
+
+for dir in vocabulary
+do
+  cd "$dir"
+  for file in *
+  do
+    title=$(head -1 $file)
+    body=$(tail +2 $file | grep -v '^$')
+    echo -n "Checking $file [$title] ... "
+    ok=1
+    if [[ ! "$title" =~ '#' ]]
+    then
+      ok=0
+      echo -e "\n  -- missing title"
+    fi
+
+    while read -r line;
+    do
+      [ ! -z "$line" ] || continue
+      IFS=';' read -r -a array <<< "$line"
+      if [ ${#array[@]} -lt 3 -o ${#array[@]} -gt 4 ]
+      then
+        ok=0
+        echo -e "\n  -- invalid format of line, separators=${#array[@]}: >> [$line]"
+      fi
+      if [ -z "${array[0]}" ]
+      then
+        ok=0
+        echo -e "\n  -- kanji is missing: >> [$line]"
+      fi
+      if [ -z "${array[1]}" ]
+      then
+        ok=0
+        echo -e "\n  -- kana is missing: >> [$line]"
+      fi
+      if [ -z "${array[2]}" ]
+      then
+        ok=0
+        echo -e "\n  -- translation is missing: >> [$line]"
+      fi
+    done <<< "$body"
+
+    if [ $ok -eq 1 ]
+    then
+      echo "ok"
+    fi
+  done
+  cd - &> /dev/null
+done

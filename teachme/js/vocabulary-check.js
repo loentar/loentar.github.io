@@ -10,6 +10,7 @@ onReady(() => {
         result => {
             vocabulary = result.words
             remaining = clone(result.words)
+            shuffleArray(remaining)
             initContent()
             showNextWord()
             updateButtons()
@@ -45,21 +46,18 @@ function showNextWord() {
     answeredCorrectly = true
 
     let variants = clone(vocabulary)
-    let wordIndex = randomInt(variants.length)
-    let word = remaining[wordIndex]
-    variants.splice(wordIndex, 1)
+    let word = remaining[0]
+    // remove same translations
+    for (let i = 0; i < variants.length; ++i) {
+        if (variants[i].translation === word.translation) {
+            variants.splice(i, 1)
+        }
+    }
+    shuffleArray(variants)
 
     let words = [word]
-    for (let a = 0; a < MAX_RESULTS; ++a) {
-        if (variants.length === 0) break
-        let variantIndex = randomInt(variants.length)
-        let variant = variants[variantIndex]
-        if (words.indexOf(variant) !== -1) {
-            --a
-            continue
-        }
-        words.push(variant)
-        variants.splice(variantIndex, 1)
+    for (let a = 0; a < MAX_RESULTS && variants.length > 0; ++a) {
+        words.push(variants[a])
     }
 
     id("kanji").innerHTML = query.mode === "kanji"
@@ -105,7 +103,9 @@ function checkAnswer(button, isRightAnswer, index) {
 
     ++answeredCount
     if (answeredCount === 2) {
+        id("btn_skip").disabled = "disabled"
         setTimeout(() => {
+            id("btn_skip").disabled = ""
             if (answeredCorrectly) {
                 remaining.splice(index, 1)
             }
