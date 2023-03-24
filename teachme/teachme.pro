@@ -14,16 +14,23 @@ DISTFILES += \
     db/vocabulary/every \
     db/vocabulary/food \
     db/vocabulary/great \
+    db/vocabulary/hiragana \
     db/vocabulary.index \
     db/vocabulary/insects \
     db/vocabulary/interaction \
+    db/vocabulary/katakana \
     db/vocabulary/lexicon \
     db/vocabulary/misc \
     db/vocabulary/misc2 \
+    db/vocabulary/misc3 \
+    db/vocabulary/misc4 \
+    db/vocabulary/misc5 \
+    db/vocabulary/misc6 \
     db/vocabulary/morning \
     db/vocabulary/nature \
     db/vocabulary/nouns1 \
     db/vocabulary/nouns2 \
+    db/vocabulary/nouns3 \
     db/vocabulary/occupations \
     db/vocabulary/phrases \
     db/vocabulary/phrases1 \
