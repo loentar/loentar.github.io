@@ -6,6 +6,9 @@ onReady(() => {
     getVocabulary(
         result => {
             vocabulary = result.words
+            if (vocabulary[0].kanji === '*') {
+                vocabulary.splice(0, 1)
+            }
             showWord()
             updateButtons()
             id("title").innerText = result.title
