@@ -28,6 +28,9 @@ onReady(() => {
     id("btn_skip").onclick = () => {
         next()
     }
+    id("btn_restart").onclick = () => {
+        document.location.reload()
+    }
     id("btn_finish").onclick = () => {
         go("vocabulary-index.html")
     }
@@ -131,13 +134,14 @@ function checkAnswer(button, isRightAnswer, index) {
 function next() {
     if (remaining.length !== 0) {
         showNextWord()
-        updateButtons()
     }
+    updateButtons()
 }
 
 function updateButtons() {
     let nextIsVisible = remaining.length !== 0
 
     id("btn_skip").style.display = nextIsVisible ? "" : "none"
+    id("btn_restart").style.display = !nextIsVisible ? "" : "none"
     id("btn_finish").style.display = !nextIsVisible ? "" : "none"
 }
