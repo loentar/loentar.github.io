@@ -92,6 +92,7 @@ function possibleAnswers(words, map) {
 }
 
 function buttons(rightAnswer, words, map) {
+    const divider = "&nbsp;&nbsp;"
     let answers = possibleAnswers(words, word => {
         let index = remaining.indexOf(word)
         let isRightAnswer = rightAnswer === word
@@ -102,7 +103,7 @@ function buttons(rightAnswer, words, map) {
         answers.splice(SPLIT_INDEX, 0, "<p></p>")
     }
 
-    return answers.join("&nbsp;&nbsp;")
+    return divider + answers.join(divider) + divider
 }
 
 function checkAnswer(button, isRightAnswer, index) {

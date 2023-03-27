@@ -42,6 +42,7 @@ input[type=button]:disabled,input[type=button][disabled]  {
 
 @media screen and (max-width: 800px) {
     input[type=button] {
+        line-height: 3em;
         padding-left: .2em;
         padding-right: .2em;
     }
