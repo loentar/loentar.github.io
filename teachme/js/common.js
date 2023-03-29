@@ -25,7 +25,7 @@ function loadText(url, onSuccess, onError) {
         return () => {
             if (response.readyState === 4) {
                 if (response.status !== 200) {
-                    onError()
+                    onError(response.status + " " + response.statusText)
                     return
                 }
 
@@ -76,5 +76,51 @@ function clone(object) {
     return out
 }
 
+function equals(a, b) {
+    if ((a === null && b === null) || (a === undefined && b === undefined)) {
+        return true
+    }
+    if (a === null || b === null || a === undefined || b === undefined) {
+        return false
+    }
+    if (typeof a !== typeof b) {
+        return false
+    }
+
+    if (a instanceof Array && b instanceof Array) {
+        if (a.length !== b.length) {
+            return false
+        }
+        for (let i = 0; i < a.length; ++i) {
+            if (!equals(a[i], b[i])) {
+                return false
+            }
+        }
+    } else if (typeof a === "object" && typeof b === "object") {
+        var aProps = Object.getOwnPropertyNames(a)
+        var bProps = Object.getOwnPropertyNames(b)
+
+        if (aProps.length !== bProps.length) {
+            return false
+        }
+
+        for (const prop of aProps) {
+            if (!equals(a[prop], b[prop])) {
+                return false
+            }
+        }
+    } else {
+        return a === b
+    }
+
+    return true
+}
 
 let query = documentQuery()
+
+const tagMapping = {
+    "2": ["kanji", "kana"],
+    "3": ["kanji", "kana", "translation"],
+    "4": ["kanji", "kana", "translation", "description"],
+    "5": ["kanji", "kana", "kana2", "translation", "description"],
+}

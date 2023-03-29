@@ -6,7 +6,7 @@ cd ..
 
 (
   echo "DISTFILES += \\"
-  find * -type f \
+  find * -type f \! -name '*~*' \
     | grep -v '\.pro\.user$' \
     | sed 's/^.*$/    & \\/g' \
     | sort

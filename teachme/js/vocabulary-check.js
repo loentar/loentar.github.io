@@ -1,21 +1,18 @@
 
 const MAX_RESULTS = 5
 const SPLIT_INDEX = 3
-let vocabulary = []
+let db
+let mapping
 let remaining = []
 let answeredCount = 0
 let answeredCorrectly = true
-let notranslation = false
+let requiredAnswerCount = -1
 
 onReady(() => {
-    getVocabulary(
+    getDb(
         result => {
-            vocabulary = result.words
-            if (vocabulary[0].kanji === '*') {
-                notranslation = vocabulary[0].translation === '*notranslation'
-                vocabulary.splice(0, 1)
-            }
-            remaining = clone(vocabulary)
+            db = result
+            remaining = clone(db.items)
             shuffleArray(remaining)
             initContent()
             showNextWord()
@@ -26,26 +23,29 @@ onReady(() => {
     )
 
     id("btn_skip").onclick = () => {
-        next()
+        skip()
     }
     id("btn_restart").onclick = () => {
         document.location.reload()
     }
-    id("btn_finish").onclick = () => {
-        go("vocabulary-index.html")
-    }
 })
 
 function initContent() {
-    let modes = ["kanji", "kana", "translation"]
+    mapping = clone(tagMapping[db.headers.length])
+    for (let i = db.headers.length - 1; i >= 0; --i) {
+        if (!db.req[i]) {
+            mapping.splice(i, 1)
+        } else {
+            ++requiredAnswerCount
+        }
+    }
 
-    let index = modes.indexOf(query.mode)
-    modes.splice(index, 1)
-    modes.unshift(query.mode)
+    let part = mapping.splice(query.part, 1)[0]
+    mapping.unshift(part)
 
     let content = ""
-    for (let mode of modes) {
-        content += `<div id="${mode}"></div><p/><p/>`
+    for (let mode of mapping) {
+        content += `<div id="${mode}"></div><p></p>`
     }
     id("content").innerHTML = content
 }
@@ -54,12 +54,16 @@ function showNextWord() {
     answeredCount = 0
     answeredCorrectly = true
 
-    let variants = clone(vocabulary)
+    let variants = clone(db.items)
     let word = remaining[0]
     // remove same translations
     for (let i = 0; i < variants.length; ++i) {
-        if (variants[i].translation === word.translation) {
-            variants.splice(i, 1)
+        for (let j = 0; j < word.length; ++j) {
+            if (variants[i][j] === word[j] && db.req[j]) {
+                variants.splice(i, 1)
+                --i
+                break
+            }
         }
     }
     shuffleArray(variants)
@@ -69,21 +73,16 @@ function showNextWord() {
         words.push(variants[a])
     }
 
-    id("kanji").innerHTML = (query.mode === "kanji"
-        ? word.kanji
-        : buttons(word, words, answer => answer.kanji)) + "<hr/>"
-
-    id("kana").innerHTML = (query.mode === "kana"
-        ? word.kana
-        : buttons(word, words, answer => "「" + answer.kana + "」")) + "<hr/>"
-
-    if (!notranslation) {
-        id("translation").innerHTML = (query.mode === "translation"
-            ? word.translation
-            : buttons(word, words, answer => answer.translation)) + "<hr/>"
+    let tags = tagMapping[db.headers.length]
+    const queryPart = parseInt(query.part)
+    for (i = 0; i < db.req.length; ++i) {
+        if (db.req[i]) {
+            let text = (queryPart === i) ? word[queryPart] : buttons(word, words, answer => answer[i])
+            id(tags[i]).innerHTML = text + "<hr/>"
+        }
     }
 
-    id("progress").innerHTML = `[${vocabulary.length - remaining.length + 1} / ${vocabulary.length}]`
+    id("progress").innerHTML = `[${db.items.length - remaining.length + 1} / ${db.items.length}]`
 }
 
 function possibleAnswers(words, map) {
@@ -97,9 +96,10 @@ function possibleAnswers(words, map) {
 function buttons(rightAnswer, words, map) {
     const divider = "&nbsp;&nbsp;"
     let answers = possibleAnswers(words, word => {
-        let index = remaining.indexOf(word)
-        let isRightAnswer = rightAnswer === word
-        return `<input type="button" value="${map(word)}" onclick="checkAnswer(this, ${isRightAnswer}, ${index})" />`
+        let index = remaining.findIndex(it => equals(it, word))
+        let isRightAnswer = equals(rightAnswer, word)
+        let mapped = map(word)
+        return `<input type="button" value="${mapped}" onclick="checkAnswer(this, ${isRightAnswer}, ${index})" />`
     })
 
     if (answers.length > SPLIT_INDEX) {
@@ -118,8 +118,7 @@ function checkAnswer(button, isRightAnswer, index) {
     answeredCorrectly = answeredCorrectly && isRightAnswer
 
     ++answeredCount
-    let maxAnsweredCount = notranslation ? 1 : 2
-    if (answeredCount === maxAnsweredCount) {
+    if (answeredCount === requiredAnswerCount) {
         id("btn_skip").disabled = "disabled"
         setTimeout(() => {
             id("btn_skip").disabled = ""
@@ -129,6 +128,15 @@ function checkAnswer(button, isRightAnswer, index) {
             next()
         }, answeredCorrectly ? 500 : 3000)
     }
+}
+
+function skip() {
+    if (remaining.length > 1) {
+        let skipped = remaining.splice(0, 1)
+        remaining.push(skipped)
+        showNextWord()
+    }
+    updateButtons()
 }
 
 function next() {
@@ -141,7 +149,7 @@ function next() {
 function updateButtons() {
     let nextIsVisible = remaining.length !== 0
 
-    id("btn_skip").style.display = nextIsVisible ? "" : "none"
+    id("btn_skip").style.display = (remaining.length > 1) ? "" : "none"
     id("btn_restart").style.display = !nextIsVisible ? "" : "none"
     id("btn_finish").style.display = !nextIsVisible ? "" : "none"
 }

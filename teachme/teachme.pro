@@ -4,21 +4,41 @@ DISTFILES += \
     db/articles/genko_itti \
     db/articles.index \
     db/articles/just_now \
-    db/vocabulary/actions \
-    db/vocabulary/answer \
+    db/db.index \
+    db/JLPT.index \
+    db/JLPT/JLPT5/grammar.csv \
+    db/JLPT/JLPT5/i-adjectives.csv \
+    db/JLPT/JLPT5/kanji.csv \
+    db/JLPT/JLPT5/katakana-words.csv \
+    db/JLPT/JLPT5/na-adjectives.csv \
+    db/JLPT/JLPT5/na-adjectives-test.csv \
+    db/JLPT/JLPT5/nouns.csv \
+    db/JLPT/JLPT5/particles.csv \
+    db/JLPT/JLPT5/pre-noun-adjectival.csv \
+    db/JLPT/JLPT5/verbs.csv \
+    db/Kana/hiragana/hiragana1.csv \
+    db/Kana/hiragana/hiragana2.csv \
+    db/Kana.index \
+    db/Kana/katakana/katakana1.csv \
+    db/Kana/katakana/katakana2.csv \
+    db/vocabulary/01_answer \
+    db/vocabulary/01_body_parts1 \
+    db/vocabulary/01_body_parts2 \
+    db/vocabulary/01_body_parts3 \
+    db/vocabulary/01_body_parts4 \
+    db/vocabulary/01_every \
+    db/vocabulary/01_verbs1 \
+    db/vocabulary/01_verbs2 \
+    db/vocabulary/01_verbs3 \
+    db/vocabulary/01_verbs4 \
+    db/vocabulary/02_change_state1 \
+    db/vocabulary/02_change_state2 \
+    db/vocabulary/02_food \
+    db/vocabulary/03_great \
     db/vocabulary/birds \
-    db/vocabulary/body_parts1 \
-    db/vocabulary/body_parts2 \
-    db/vocabulary/body_parts3 \
-    db/vocabulary/body_parts4 \
-    db/vocabulary/every \
-    db/vocabulary/food \
-    db/vocabulary/great \
-    db/vocabulary/hiragana \
     db/vocabulary.index \
     db/vocabulary/insects \
     db/vocabulary/interaction \
-    db/vocabulary/katakana \
     db/vocabulary/lexicon \
     db/vocabulary/misc \
     db/vocabulary/misc2 \
@@ -26,11 +46,11 @@ DISTFILES += \
     db/vocabulary/misc4 \
     db/vocabulary/misc5 \
     db/vocabulary/misc6 \
+    db/vocabulary/misc_actions \
     db/vocabulary/morning \
     db/vocabulary/nature \
     db/vocabulary/nouns1 \
     db/vocabulary/nouns2 \
-    db/vocabulary/nouns3 \
     db/vocabulary/occupations \
     db/vocabulary/phrases \
     db/vocabulary/phrases1 \
@@ -41,19 +61,18 @@ DISTFILES += \
     db/vocabulary/slang \
     db/vocabulary/term \
     db/vocabulary/time \
-    db/vocabulary/verbs1 \
-    db/vocabulary/verbs2 \
-    db/vocabulary/verbs3 \
-    db/vocabulary/verbs4 \
     db/vocabulary/weather \
     db/vocabulary/weekdays \
     db/vocabulary/zodiac \
     index.html \
     js/common.js \
+    js/get-db.js \
     js/get-vocabulary.js \
+    js/index.js \
     js/vocabulary-check.js \
     js/vocabulary-index.js \
     js/vocabulary-learn.js \
+    js/vocabulary-list.js \
     teachme.pro \
     tools/check_db \
     tools/start_server \
@@ -62,3 +81,4 @@ DISTFILES += \
     vocabulary-check.html \
     vocabulary-index.html \
     vocabulary-learn.html \
+    vocabulary-list.html \

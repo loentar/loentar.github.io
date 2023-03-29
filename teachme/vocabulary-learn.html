@@ -4,19 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
     <script src="js/common.js"></script>
-    <script src="js/get-vocabulary.js"></script>
+    <script src="js/get-db.js"></script>
     <script src="js/vocabulary-learn.js"></script>
-    <script src="js/vocabulary-check.js"></script>
   </head>
   <body>
     <div>
         <div id="content"></div>
         <center>
-            <a href="vocabulary-index.html">Index</a>
+            <a href="#" onclick="history.back()">Index</a>
             <div id="title"></div>
             <p/><p/>
             <div id="kanji"></div>
             <div id="kana"></div>
+            <div id="kana2"></div>
             <div id="translation"></div>
             <div id="description"></div>
             <p/><p/>
@@ -25,7 +25,7 @@
             <div id="buttons">
                 <input id="btn_prev" type="button" value="⬅ Previous" />
                 <input id="btn_next" type="button" value="Next ➡" />
-                <input id="btn_finish" type="button" value="Finish 📙" style="display: none" />
+                <input id="btn_finish" type="button" value="Finish 📙" style="display: none" onclick="history.back()"/>
             </div>
         </center>
     </div>

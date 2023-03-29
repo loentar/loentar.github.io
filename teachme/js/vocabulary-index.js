@@ -1,6 +1,6 @@
 
 onReady(() => {
-    loadText("db/vocabulary.index",
+    loadText("db/" + query.index,
         (response) => {
             parseIndex(response)
         },
@@ -12,22 +12,32 @@ onReady(() => {
 
 
 function parseIndex(response) {
-    // time # Время
-    const container = document.getElementById("buttons")
+    // time # Время;; #
+    // time # Время;; # kanji;kana;translation
+    const container = id("buttons")
     let lines = response.split("\n")
     let innerHtml = "<table><body>"
     let index = 0
+    let defaultHeaders = ['字', 'あ', 'A', '?Descr']
     for (let line of lines) {
         if (line === "") continue
-        let [file, title] = line.split(" # ")
+        let [file, title, headers] = line.split('#')
+        title = title.replace(/;.*/, "")
         innerHtml +=
             "<tr>"
             + `<td>${++index}. ${title}</td>`
-            + `<td><input type="button" value="📝" onclick="go('vocabulary-learn.html?index=${file}')" /></td>`
-            + `<td><input type="button" value="字" onclick="go('vocabulary-check.html?index=${file}&mode=kanji')" /></td>`
-            + `<td><input type="button" value="あ" onclick="go('vocabulary-check.html?index=${file}&mode=kana')" /></td>`
-            + `<td><input type="button" value="A" onclick="go('vocabulary-check.html?index=${file}&mode=translation')" /></td>`
-            + '</tr>'
+            + `<td><input type="button" value="📒" onclick="go('vocabulary-learn.html?index=${file}')" /></td>`
+            + `<td><input type="button" value="📄" onclick="go('vocabulary-list.html?index=${file}')" /></td>`
+        let parts = headers.trim() !== "" ? headers.split(';') : defaultHeaders
+
+        for (let i = 0; i < parts.length; ++i) {
+            let part = parts[i]
+            if (part.startsWith("?")) continue
+            innerHtml += `<td><input type="button" value="${part.trim()}" `
+                    + `onclick="go('vocabulary-check.html?index=${file.trim()}&part=${i}')" /></td>`
+        }
+
+        innerHtml += '</tr>'
     }
     innerHtml += "</body></table>"
     container.innerHTML = innerHtml

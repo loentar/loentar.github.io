@@ -1,7 +1,7 @@
 
 function getVocabulary(onSuccess, onError) {
     console.log(JSON.stringify(query))
-    loadText("db/vocabulary/" + query.index,
+    loadText("db/" + query.index,
         response => {
             onSuccess(parseVocabulary(response))
         },
@@ -20,7 +20,7 @@ function parseVocabulary(response) {
     for (let line of lines) {
         if (line === "") continue
         if (line.startsWith("#")) {
-            title = line.slice(1).trim()
+            title = line.slice(1).replace(/;.*/, "").trim()
             continue
         }
 

@@ -1,16 +1,26 @@
 #!/bin/bash
 
 cd ../db
+rm -f *.index
 
-for dir in $(find * -type d)
+for dir in $(find * -maxdepth 0 -type d)
 do
   (
     cd $dir
-    for file in *
+    for file in $(find * -type f \! -name '*~*')
     do
       title=$(head -1 $file)
-      echo "$file $title"
+      headers=$(sed '2!d' $file)
+
+      if [[ "$headers" =~ "*" ]]
+      then
+        headers=${headers//\*/}
+      else
+        headers=
+      fi
+      echo "$dir/$file $title # $headers"
     done
     cd - &> /dev/null
   ) > $dir.index
+  echo "$dir.index" >> db.index
 done
