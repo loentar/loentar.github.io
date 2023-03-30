@@ -7,7 +7,7 @@ for dir in $(find * -maxdepth 0 -type d)
 do
   (
     cd $dir
-    for file in $(find * -type f \! -name '*~*')
+    for file in $(find * -type f \! -name '*~*' | sort)
     do
       title=$(head -1 $file)
       headers=$(sed '2!d' $file)

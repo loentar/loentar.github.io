@@ -1,0 +1,4 @@
+kanji replace joined translation:
+
+;([-a-zA-Z /,\(\)]+)([^;a-zA-Z]+);([-a-zA-Z /,\(\)]+)([^;a-zA-Z]+);
+;\2;\1;\4;\3;

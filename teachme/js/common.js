@@ -123,4 +123,5 @@ const tagMapping = {
     "3": ["kanji", "kana", "translation"],
     "4": ["kanji", "kana", "translation", "description"],
     "5": ["kanji", "kana", "kana2", "translation", "description"],
+    "7": ["kanji", "kana", "", "kana2", "", "translation", "description"],
 }

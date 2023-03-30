@@ -6,16 +6,16 @@ DISTFILES += \
     db/articles/just_now \
     db/db.index \
     db/JLPT.index \
+    db/JLPT/JLPT5/01_nouns.csv \
+    db/JLPT/JLPT5/02_verbs.csv \
+    db/JLPT/JLPT5/03_adverbs.csv \
+    db/JLPT/JLPT5/04_na-adjectives.csv \
+    db/JLPT/JLPT5/05_i-adjectives.csv \
+    db/JLPT/JLPT5/06_pre-noun-adjectival.csv \
+    db/JLPT/JLPT5/07_particles.csv \
+    db/JLPT/JLPT5/08_katakana-words.csv \
     db/JLPT/JLPT5/grammar.csv \
-    db/JLPT/JLPT5/i-adjectives.csv \
     db/JLPT/JLPT5/kanji.csv \
-    db/JLPT/JLPT5/katakana-words.csv \
-    db/JLPT/JLPT5/na-adjectives.csv \
-    db/JLPT/JLPT5/na-adjectives-test.csv \
-    db/JLPT/JLPT5/nouns.csv \
-    db/JLPT/JLPT5/particles.csv \
-    db/JLPT/JLPT5/pre-noun-adjectival.csv \
-    db/JLPT/JLPT5/verbs.csv \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
     db/Kana.index \
@@ -73,6 +73,7 @@ DISTFILES += \
     js/vocabulary-index.js \
     js/vocabulary-learn.js \
     js/vocabulary-list.js \
+    regex/regexes \
     teachme.pro \
     tools/check_db \
     tools/start_server \

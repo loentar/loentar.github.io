@@ -1,10 +1,10 @@
-JLPT/JLPT5/katakana-words.csv # LPT N5 Katakana Words;; #  Japanese;Romaji;Grammar Meaning
+JLPT/JLPT5/01_nouns.csv # JLPT N5 Nouns;; #  文法;Noun;?Romanji;Meaning
+JLPT/JLPT5/02_verbs.csv # JLPT N5 Verbs;; #  動詞;Verb;?Romanji;Meaning
+JLPT/JLPT5/03_adverbs.csv # JLPT N5 Adverbs;; #  Japanese;Verb;Meaning
+JLPT/JLPT5/04_na-adjectives.csv # JLPT N5 な-Adjectives;; #  な形容詞;な-adjective;?Romanji;Meaning
+JLPT/JLPT5/05_i-adjectives.csv # JLPT N5 い-Adjectives List;; #  い形容詞;い-adjective;?Romanji;Meaning
+JLPT/JLPT5/06_pre-noun-adjectival.csv # JLPT N5 Pre-noun Adjectival ;; #  Japanese;Romaji;Meaning
+JLPT/JLPT5/07_particles.csv # JLPT N5 Particles;; #  Japanese;Romaji;Meaning
+JLPT/JLPT5/08_katakana-words.csv # LPT N5 Katakana Words;; #  Japanese;Romaji;Meaning
 JLPT/JLPT5/grammar.csv # JLPT N5 Grammar;; #  文法;Grammar;Meaning
-JLPT/JLPT5/na-adjectives.csv # JLPT N5 な-Adjectives;; #  な形容詞;な-adjective;Meaning
-JLPT/JLPT5/kanji.csv # JLPT N5 Kanji;;;; #  Kanji;Onyomi;Kunyomi;Meaning;?Description
-JLPT/JLPT5/na-adjectives-test.csv # JLPT N5 な-Adjectives test;; #  な形容詞;Romanji;な-adjective;Meaning
-JLPT/JLPT5/nouns.csv # JLPT N5 Nouns;; #  文法;Noun;Meaning
-JLPT/JLPT5/i-adjectives.csv # JLPT N5 い-Adjectives List;; #  い形容詞;い-adjective;Meaning
-JLPT/JLPT5/particles.csv # JLPT N5 Particles;; #  Japanese;Romaji;Meaning
-JLPT/JLPT5/verbs.csv # JLPT N5 Verbs;; #  動詞;Verb;Meaning
-JLPT/JLPT5/pre-noun-adjectival.csv # JLPT N5 Pre-noun Adjectival ;; #  Japanese;Romaji;Grammar Meaning
+JLPT/JLPT5/kanji.csv # JLPT N5 Kanji;;;;; #  Kanji;Onyomi;?Onjomi Romanji;Kunyomi;?Kunyomi Romanji;Meaning;?Description
