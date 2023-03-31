@@ -83,6 +83,8 @@ function showNextWord() {
             ++requiredAnswerCount
             let text = (queryPart === i) ? word[queryPart] : buttons(word, words, answer => answer[i])
             id(tags[i]).innerHTML = text + "<hr/>"
+        } else if (word[i] === "") {
+            id(tags[i]).innerHTML = ""
         }
     }
 
