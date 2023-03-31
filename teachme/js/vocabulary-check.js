@@ -13,7 +13,6 @@ onReady(() => {
         result => {
             db = result
             remaining = clone(db.items)
-            shuffleArray(remaining)
             initContent()
             showNextWord()
             updateButtons()
@@ -22,6 +21,11 @@ onReady(() => {
         error => alert("can't load vocabulary: " + error)
     )
 
+    id("btn_shuffle").onclick = () => {
+        id("btn_shuffle").style.display = "none"
+        shuffleArray(remaining)
+        showNextWord()
+    }
     id("btn_skip").onclick = () => {
         skip()
     }

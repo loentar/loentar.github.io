@@ -41,6 +41,7 @@ function showWord() {
     for (let i = 0; i < mapping.length; ++i) {
         let text = item[i] ?? ""
         let field = mapping[i]
+        if (field === "") continue
         if (field.startsWith("kana")) {
             text = "「" + text + "」"
         }
