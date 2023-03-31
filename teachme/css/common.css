@@ -14,7 +14,7 @@ input[type=button]:hover:!disabled {
     background-color: #efedef;
 }
 
-input[type=button]:disabled,input[type=button][disabled]  {
+input[type=button]:disabled,input[type=button][disabled] {
     opacity: 0.6;
     cursor: default;
 }
@@ -49,7 +49,18 @@ input[type=button]:disabled,input[type=button][disabled]  {
 
 .right {
     position: absolute;
-    right: 1em;
+    right: 0.5em;
+}
+
+.icon {
+    font-size: 1.5em !important;
+    line-height: 1.25em !important;
+    min-height: 2em !important;
+    min-width: 2em !important;
+}
+
+.checked {
+    background: #ff9 !important;
 }
 
 @media screen and (max-width: 800px) {

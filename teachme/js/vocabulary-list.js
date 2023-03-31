@@ -12,8 +12,14 @@ onReady(() => {
         error => alert("can't load vocabulary: " + error)
     )
 
-    id("btn_hints").onclick = () => {
+    let btnHints = id("btn_hints")
+    btnHints.onclick = () => {
         showHints = !showHints
+        if (showHints) {
+            btnHints.classList.add("checked")
+        } else {
+            btnHints.classList.remove("checked")
+        }
         showList()
     }
 })
