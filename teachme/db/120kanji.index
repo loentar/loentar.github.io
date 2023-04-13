@@ -1,0 +1,6 @@
+120kanji/001-010.csv # Kanji 001-010;; #  Kanji;Onyomi;Kunyomi
+120kanji/001-010-use.csv # Use of Kanji 001-010;; #  Kanji;Kana;Translation;?Example
+120kanji/011-020.csv # Kanji 011-020;;; #  Kanji;Onyomi;Kunyomi;?Description
+120kanji/011-020-use.csv # Use of Kanji 011-020;; #  Kanji;Kana;Translation;?Example
+120kanji/021-030.csv # Kanji 021-030;;; #  Kanji;Onyomi;Kunyomi;?Description
+120kanji/021-030-use.csv # Use of Kanji 021-030;; #  Kanji;Kana;Translation;?Example

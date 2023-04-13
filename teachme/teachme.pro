@@ -1,5 +1,12 @@
 DISTFILES += \
     css/common.css \
+    db/120kanji/001-010.csv \
+    db/120kanji/001-010-use.csv \
+    db/120kanji/011-020.csv \
+    db/120kanji/011-020-use.csv \
+    db/120kanji/021-030.csv \
+    db/120kanji/021-030-use.csv \
+    db/120kanji.index \
     db/articles/dishes \
     db/articles/genko_itti \
     db/articles.index \
