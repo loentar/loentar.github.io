@@ -6,6 +6,7 @@ let mapping
 let remaining = []
 let answeredCount = 0
 let answeredCorrectly = true
+let hasWrongAnswers = false
 let requiredAnswerCount = -1
 
 onReady(() => {
@@ -55,6 +56,7 @@ function initContent() {
 function showNextWord() {
     answeredCount = 0
     answeredCorrectly = true
+    hasWrongAnswers = false
 
     let variants = clone(db.items)
     let word = remaining[0]
@@ -118,12 +120,17 @@ function buttons(rightAnswer, words, map) {
 function checkAnswer(button, isRightAnswer, index) {
     button.value = (isRightAnswer ? " ✔ " : " ✘ ") + button.value
     button.classList.add(isRightAnswer ? "success" : "failure")
-    for (let child of button.parentElement.children) {
-        child.disabled = "disabled"
+    if (isRightAnswer) {
+        for (let child of button.parentElement.children) {
+            child.disabled = "disabled"
+        }
+        ++answeredCount
+    } else {
+        hasWrongAnswers = true
     }
+
     answeredCorrectly = answeredCorrectly && isRightAnswer
 
-    ++answeredCount
     if (answeredCount === requiredAnswerCount) {
         id("btn_skip").disabled = "disabled"
         setTimeout(() => {
@@ -132,7 +139,7 @@ function checkAnswer(button, isRightAnswer, index) {
                 remaining.splice(index, 1)
             }
             next()
-        }, answeredCorrectly ? 500 : 3000)
+        }, answeredCorrectly && !hasWrongAnswers ? 500 : 3000)
     }
 }
 
