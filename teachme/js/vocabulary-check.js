@@ -63,7 +63,7 @@ function showNextWord() {
     // remove same translations
     for (let i = 0; i < variants.length; ++i) {
         for (let j = 0; j < word.length; ++j) {
-            if (variants[i][j] === word[j] && db.req[j] || variants[i][j] === "") {
+            if (db.req[j] && (variants[i][j] === word[j] || variants[i][j] === "")) {
                 variants.splice(i, 1)
                 --i
                 break
@@ -81,11 +81,12 @@ function showNextWord() {
     const queryPart = parseInt(query.part)
     requiredAnswerCount = -1
     for (i = 0; i < db.req.length; ++i) {
-        if (db.req[i] && word[i] !== "") {
+        if (!db.req[i]) continue
+        if (word[i] !== "") {
             ++requiredAnswerCount
             let text = (queryPart === i) ? word[queryPart] : buttons(word, words, answer => answer[i])
             id(tags[i]).innerHTML = text + "<hr/>"
-        } else if (word[i] === "") {
+        } else {
             id(tags[i]).innerHTML = ""
         }
     }
