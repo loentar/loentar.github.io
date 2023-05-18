@@ -33,6 +33,12 @@ function parseIndex(response) {
         for (let i = 0; i < parts.length; ++i) {
             let part = parts[i]
             if (part.startsWith("?")) continue
+            part = part.trim()
+                .replace(/^Kanji$/, '字')
+                .replace(/^Kana$/, 'あ')
+                .replace(/^Onyomi$/, 'あ')
+                .replace(/^Kunyomi$/, 'ア')
+                .replace(/^Translation$/, '🔄')
             innerHtml += `<td><input type="button" value="${part.trim()}" `
                     + `onclick="go('vocabulary-check.html?index=${file.trim()}&part=${i}')" /></td>`
         }

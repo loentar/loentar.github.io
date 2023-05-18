@@ -43,7 +43,7 @@ function showList() {
     let index = 0
     for (let item of db.items) {
         innerHtml += "<tr>" + `<td>${++index}.</td>`
-        for (i = 0; i < item.length; ++i) {
+        for (i = 0; i < db.headers.length; ++i) {
             if (!showHints && !db.req[i]) continue
             let part = item[i]
             innerHtml += `<td>${part ?? ""}</td>`

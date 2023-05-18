@@ -108,7 +108,9 @@ function buttons(rightAnswer, words, map) {
         let index = remaining.findIndex(it => equals(it, word))
         let isRightAnswer = equals(rightAnswer, word)
         let mapped = map(word)
-        return `<input type="button" value="${mapped}" onclick="checkAnswer(this, ${isRightAnswer}, ${index})" />`
+        if (mapped) {
+            return `<input type="button" value="${mapped}" onclick="checkAnswer(this, ${isRightAnswer}, ${index})" />`
+        }
     })
 
     if (answers.length > SPLIT_INDEX) {

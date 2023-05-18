@@ -10,3 +10,5 @@
 120kanji/041-050-use.csv # Use of Kanji 041-050;; #  Kanji;Kana;Translation;?Example
 120kanji/051-060.csv # Kanji 051-060;;; #  Kanji;Onyomi;Kunyomi;?Description
 120kanji/051-060-use.csv # Use of Kanji 051-060;; #  Kanji;Kana;Translation;?Example
+120kanji/061-070.csv # Kanji 061-070;;; #  Kanji;Onyomi;Kunyomi;?Description
+120kanji/061-070-use.csv # Use of Kanji 061-070;; #  Kanji;Kana;Translation;?Example
