@@ -18,6 +18,10 @@ DISTFILES += \
     db/120kanji/071-080-use.csv \
     db/120kanji/081-090.csv \
     db/120kanji/081-090-use.csv \
+    db/120kanji/091-100.csv \
+    db/120kanji/091-100-use.csv \
+    db/120kanji/101-110.csv \
+    db/120kanji/101-110-use.csv \
     db/120kanji.index \
     db/articles/dishes \
     db/articles/genko_itti \
