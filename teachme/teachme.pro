@@ -22,6 +22,8 @@ DISTFILES += \
     db/120kanji/091-100-use.csv \
     db/120kanji/101-110.csv \
     db/120kanji/101-110-use.csv \
+    db/120kanji/111-120.csv \
+    db/120kanji/111-120-use.csv \
     db/120kanji.index \
     db/articles/dishes \
     db/articles/genko_itti \
@@ -42,6 +44,7 @@ DISTFILES += \
     db/jpschool/01_vocabulary.csv \
     db/jpschool/02_vocabulary.csv \
     db/jpschool/03_vocabulary.csv \
+    db/jpschool/04_vocabulary.csv \
     db/jpschool.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
