@@ -47,6 +47,7 @@ DISTFILES += \
     db/jpschool/04_vocabulary.csv \
     db/jpschool/05_vocabulary.csv \
     db/jpschool/06_vocabulary.csv \
+    db/jpschool/07_vocabulary.csv \
     db/jpschool.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
