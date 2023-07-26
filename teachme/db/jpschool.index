@@ -5,3 +5,4 @@ jpschool/04_vocabulary.csv # School Lession 4;; #  文法;Noun;?Romanji;Meaning
 jpschool/05_vocabulary.csv # School Lession 5;; #  文法;Noun;?Romanji;Meaning
 jpschool/06_vocabulary.csv # School Lession 6;; #  文法;Noun;?Romanji;Meaning
 jpschool/07_vocabulary.csv # School Lession 7;; #  Kanji;Kana;Meaning
+jpschool/09_exceptions.csv # Глаголы-исключения 1-го спряжения; #  Kanji;Kana;Meaning
