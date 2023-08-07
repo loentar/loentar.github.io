@@ -50,6 +50,7 @@ DISTFILES += \
     db/jpschool/07_vocabulary.csv \
     db/jpschool/09_exceptions.csv \
     db/jpschool/10_vocabulary.csv \
+    db/jpschool/11_vocabulary.csv \
     db/jpschool.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \

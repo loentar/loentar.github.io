@@ -7,3 +7,4 @@ jpschool/06_vocabulary.csv # School Lession 6;; #  文法;Noun;?Romanji;Meaning
 jpschool/07_vocabulary.csv # School Lession 7;; #  Kanji;Kana;Meaning
 jpschool/09_exceptions.csv # Глаголы-исключения 1-го спряжения; #  Kanji;Kana;?Translation;Meaning
 jpschool/10_vocabulary.csv # School Lession 10;; #  Kanji;Kana;Meaning
+jpschool/11_vocabulary.csv # School Lession 11;; #  Kanji;Kana;Meaning
