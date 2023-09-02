@@ -59,6 +59,7 @@ DISTFILES += \
     db/Kana.index \
     db/Kana/katakana/katakana1.csv \
     db/Kana/katakana/katakana2.csv \
+    db/jpschool/14_vocabulary.csv \
     db/vocabulary/01_answer \
     db/vocabulary/01_body_parts1 \
     db/vocabulary/01_body_parts2 \
