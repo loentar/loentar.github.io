@@ -12,3 +12,5 @@ jpschool/13_kanji.csv # School Lession 13 - Kanji;; #  Kanji;オンヨミ;くん
 jpschool/13_vocabulary.csv # School Lession 13;; #  Kanji;Kana;Meaning
 jpschool/14_kanji.csv # School Lession 14 - Kanji;; #  Kanji;オンヨミ;くんよみ
 jpschool/14_vocabulary.csv # School Lession 14;; #  Kanji;Kana;Meaning
+jpschool/16_kanji.csv # School Lession 16 - Kanji;; #  Kanji;オンヨミ;くんよみ
+jpschool/16_vocabulary.csv # School Lession 16;; #  Kanji;Kana;Meaning
