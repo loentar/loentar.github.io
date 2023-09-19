@@ -52,17 +52,20 @@ DISTFILES += \
     db/jpschool/10_vocabulary.csv \
     db/jpschool/11_vocabulary.csv \
     db/jpschool/13_kanji.csv \
-    db/jpschool/13_vocabulary.csv \
+    db/jpschool/13_kanji_vocabulary.csv \
     db/jpschool/14_kanji.csv \
-    db/jpschool/14_vocabulary.csv \
+    db/jpschool/14_kanji_vocabulary.csv \
+    db/jpschool/16_kanji.csv \
+    db/jpschool/16_kanji_vocabulary.csv \
+    db/jpschool/17_kanji.csv \
+    db/jpschool/17_kanji_vocabulary.csv \
+    db/jpschool/17_vocabulary.csv \
     db/jpschool.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
     db/Kana.index \
     db/Kana/katakana/katakana1.csv \
     db/Kana/katakana/katakana2.csv \
-    db/jpschool/16_kanji.csv \
-    db/jpschool/16_vocabulary.csv \
     db/vocabulary/01_answer \
     db/vocabulary/01_body_parts1 \
     db/vocabulary/01_body_parts2 \
