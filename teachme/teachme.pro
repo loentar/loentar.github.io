@@ -60,6 +60,9 @@ DISTFILES += \
     db/jpschool/17_kanji.csv \
     db/jpschool/17_kanji_vocabulary.csv \
     db/jpschool/17_vocabulary.csv \
+    db/jpschool/18_kanji.csv \
+    db/jpschool/18_kanji_vocabulary.csv \
+    db/jpschool/18_vocabulary.csv \
     db/jpschool.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
