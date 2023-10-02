@@ -8,8 +8,10 @@ jpschool/07_vocabulary.csv # School Lession 7;; #  Kanji;Kana;Meaning
 jpschool/09_exceptions.csv # Глаголы-исключения 1-го спряжения; #  Kanji;Kana;?Translation;Meaning
 jpschool/10_vocabulary.csv # School Lession 10;; #  Kanji;Kana;Meaning
 jpschool/11_vocabulary.csv # School Lession 11;; #  Kanji;Kana;Meaning
+jpschool/12_vocabulary.csv # School Lession 12;; #  Kana;Kanji;Meaning
 jpschool/13_kanji.csv # 13 - Kanji;; #  Kanji;オンヨミ;くんよみ
 jpschool/13_kanji_vocabulary.csv # 13 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
+jpschool/13_vocabulary.csv # School Lession 12;; #  Kana;Kanji;Meaning
 jpschool/14_kanji.csv # 14 - Kanji;; #  Kanji;オンヨミ;くんよみ
 jpschool/14_kanji_vocabulary.csv # 14 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
 jpschool/16_kanji.csv # 16 - Kanji;; #  Kanji;オンヨミ;くんよみ
@@ -19,4 +21,5 @@ jpschool/17_kanji_vocabulary.csv # 17 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
 jpschool/17_vocabulary.csv # 17 - Vocabulary;; #  Kanji;Kana;Meaning
 jpschool/18_kanji.csv # 18 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning
 jpschool/18_kanji_vocabulary.csv # 18 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
-jpschool/18_vocabulary.csv # 18 - Vocabulary;; #  Kana;Kanji;Meaning
+jpschool/18_vocabulary.csv # 18 - Vocabulary;; #  Kanji;Kana;Meaning
+jpschool/19_vocabulary.csv # 19 - Vocabulary;; #  Kanji;Kana;Meaning

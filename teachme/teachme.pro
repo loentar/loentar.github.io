@@ -51,8 +51,10 @@ DISTFILES += \
     db/jpschool/09_exceptions.csv \
     db/jpschool/10_vocabulary.csv \
     db/jpschool/11_vocabulary.csv \
+    db/jpschool/12_vocabulary.csv \
     db/jpschool/13_kanji.csv \
     db/jpschool/13_kanji_vocabulary.csv \
+    db/jpschool/13_vocabulary.csv \
     db/jpschool/14_kanji.csv \
     db/jpschool/14_kanji_vocabulary.csv \
     db/jpschool/16_kanji.csv \
@@ -63,6 +65,7 @@ DISTFILES += \
     db/jpschool/18_kanji.csv \
     db/jpschool/18_kanji_vocabulary.csv \
     db/jpschool/18_vocabulary.csv \
+    db/jpschool/19_vocabulary.csv \
     db/jpschool.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
