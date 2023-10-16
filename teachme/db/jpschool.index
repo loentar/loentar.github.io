@@ -26,3 +26,6 @@ jpschool/19_vocabulary.csv # 19 - Vocabulary;; #  Kanji;Kana;Meaning
 jpschool/20_kanji.csv # 20 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning
 jpschool/20_kanji_vocabulary.csv # 20 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
 jpschool/20_vocabulary.csv # 20 - Vocabulary;; #  Kanji;Kana;Meaning
+jpschool/21_kanji.csv # 21 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning
+jpschool/21_kanji_vocabulary.csv # 21 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
+jpschool/21_vocabulary.csv # 21 - Vocabulary;; #  Kanji;Kana;Meaning
