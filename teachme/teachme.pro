@@ -41,6 +41,8 @@ DISTFILES += \
     db/JLPT/JLPT5/08_katakana-words.csv \
     db/JLPT/JLPT5/grammar.csv \
     db/JLPT/JLPT5/kanji.csv \
+    db/jpschool-N4/06_kanji.csv \
+    db/jpschool-N4/06_kanji_vocabulary.csv \
     db/jpschool/01_vocabulary.csv \
     db/jpschool/02_vocabulary.csv \
     db/jpschool/03_vocabulary.csv \
