@@ -41,8 +41,6 @@ DISTFILES += \
     db/JLPT/JLPT5/08_katakana-words.csv \
     db/JLPT/JLPT5/grammar.csv \
     db/JLPT/JLPT5/kanji.csv \
-    db/jpschool-N4/06_kanji.csv \
-    db/jpschool-N4/06_kanji_vocabulary.csv \
     db/jpschool/01_vocabulary.csv \
     db/jpschool/02_vocabulary.csv \
     db/jpschool/03_vocabulary.csv \
@@ -92,6 +90,10 @@ DISTFILES += \
     db/jpschool-N4/03_kanji_vocabulary.csv \
     db/jpschool-N4/05_kanji.csv \
     db/jpschool-N4/05_kanji_vocabulary.csv \
+    db/jpschool-N4/06_kanji.csv \
+    db/jpschool-N4/06_kanji_vocabulary.csv \
+    db/jpschool-N4/07_kanji.csv \
+    db/jpschool-N4/07_kanji_vocabulary.csv \
     db/jpschool-N4.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
