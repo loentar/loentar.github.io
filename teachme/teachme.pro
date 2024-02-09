@@ -147,8 +147,12 @@ DISTFILES += \
     db/vocabulary/weather \
     db/vocabulary/weekdays \
     db/vocabulary/zodiac \
+    flashcards.html \
+    flashcards-index.html \
     index.html \
     js/common.js \
+    js/flashcards-index.js \
+    js/flashcards.js \
     js/get-db.js \
     js/get-vocabulary.js \
     js/index.js \
