@@ -98,6 +98,8 @@ DISTFILES += \
     db/jpschool-N4/09_kanji_vocabulary.csv \
     db/jpschool-N4/10_kanji.csv \
     db/jpschool-N4/10_kanji_vocabulary.csv \
+    db/jpschool-N4/11_kanji.csv \
+    db/jpschool-N4/11_kanji_vocabulary.csv \
     db/jpschool-N4.index \
     db/Kana/hiragana/hiragana1.csv \
     db/Kana/hiragana/hiragana2.csv \
