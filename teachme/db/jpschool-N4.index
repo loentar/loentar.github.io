@@ -22,3 +22,5 @@ jpschool-N4/14_kanji.csv # 14 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Mean
 jpschool-N4/14_kanji_vocabulary.csv # 14 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
 jpschool-N4/15_kanji.csv # 15 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning
 jpschool-N4/15_kanji_vocabulary.csv # 15 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
+jpschool-N4/17_kanji.csv # 17 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning
+jpschool-N4/17_kanji_vocabulary.csv # 17 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
