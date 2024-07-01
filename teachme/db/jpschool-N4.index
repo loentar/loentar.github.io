@@ -1,3 +1,6 @@
+jpschool-N4/00_kanji.csv # 00 - All Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning
+jpschool-N4/00_kanji_vocabulary.csv # 00 - All Kanji Vocabulary;; #  Kanji;Kana;Meaning
+jpschool-N4/00_vocabulary.csv # 00 - Vocabulary;; #  Kanji;Kana;Meaning
 jpschool-N4/01_kanji.csv # 01 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning
 jpschool-N4/01_kanji_vocabulary.csv # 01 - Kanji Vocabulary;; #  Kanji;Kana;Meaning
 jpschool-N4/02_kanji.csv # 02 - Kanji;;; #  Kanji;オンヨミ;くんよみ;Meaning

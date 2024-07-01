@@ -82,6 +82,9 @@ DISTFILES += \
     db/jpschool/25_kanji_vocabulary.csv \
     db/jpschool/25_vocabulary.csv \
     db/jpschool.index \
+    db/jpschool-N4/00_kanji.csv \
+    db/jpschool-N4/00_kanji_vocabulary.csv \
+    db/jpschool-N4/00_vocabulary.csv \
     db/jpschool-N4/01_kanji.csv \
     db/jpschool-N4/01_kanji_vocabulary.csv \
     db/jpschool-N4/02_kanji.csv \

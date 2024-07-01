@@ -27,7 +27,9 @@ function parseDb(response) {
 
         switch (parts[0][0]) {
             case '#':
-                title = parts[0].slice(1).trim()
+                if (title === "") {
+                    title = parts[0].slice(1).trim()
+                }
                 break
 
             case '*':
