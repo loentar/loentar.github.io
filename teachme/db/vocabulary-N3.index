@@ -1,13 +1,13 @@
 vocabulary-N3/00-all-n3.csv # Лексика JLPT N3: 400 слов #  Kanji;Kana;Meaning
-vocabulary-N3/01-work.csv # 01. Работа и офис;; #  Kanji;Kana;Meaning
-vocabulary-N3/02-study.csv # 02. Учёба и университет;; #  Kanji;Kana;Meaning
-vocabulary-N3/03-house.csv # 03. Дом и быт;; #  Kanji;Kana;Meaning
-vocabulary-N3/04-food.csv # 04. Еда;; #  Kanji;Kana;Meaning
-vocabulary-N3/05-health.csv # 05. Здоровье и тело;; #  Kanji;Kana;Meaning
-vocabulary-N3/06-traveling.csv # 06. Транспорт и путешествия;; #  Kanji;Kana;Meaning
-vocabulary-N3/07-money.csv # 07. Деньги и покупки;; #  Kanji;Kana;Meaning
-vocabulary-N3/08-people.csv # 08. Люди и эмоции;; #  Kanji;Kana;Meaning
-vocabulary-N3/09-nature.csv # 09. Природа и погода;; #  Kanji;Kana;Meaning
-vocabulary-N3/10-time.csv # 10. Время и расписание;; #  Kanji;Kana;Meaning
-vocabulary-N3/11-business.csv # 11. Деловое общение;; #  Kanji;Kana;Meaning
-vocabulary-N3/12-media.csv # 12. Медиа и технологии;; #  Kanji;Kana;Meaning
+vocabulary-N3/01-work.csv # Работа и офис;; #  Kanji;Kana;Meaning
+vocabulary-N3/02-study.csv # Учёба и университет;; #  Kanji;Kana;Meaning
+vocabulary-N3/03-house.csv # Дом и быт;; #  Kanji;Kana;Meaning
+vocabulary-N3/04-food.csv # Еда;; #  Kanji;Kana;Meaning
+vocabulary-N3/05-health.csv # Здоровье и тело;; #  Kanji;Kana;Meaning
+vocabulary-N3/06-traveling.csv # Транспорт и путешествия;; #  Kanji;Kana;Meaning
+vocabulary-N3/07-money.csv # Деньги и покупки;; #  Kanji;Kana;Meaning
+vocabulary-N3/08-people.csv # Люди и эмоции;; #  Kanji;Kana;Meaning
+vocabulary-N3/09-nature.csv # Природа и погода;; #  Kanji;Kana;Meaning
+vocabulary-N3/10-time.csv # Время и расписание;; #  Kanji;Kana;Meaning
+vocabulary-N3/11-business.csv # Деловое общение;; #  Kanji;Kana;Meaning
+vocabulary-N3/12-media.csv # Медиа и технологии;; #  Kanji;Kana;Meaning
