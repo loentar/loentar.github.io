@@ -127,6 +127,44 @@ DISTFILES += \
     db/Kana.index \
     db/Kana/katakana/katakana1.csv \
     db/Kana/katakana/katakana2.csv \
+    db/kanji-N3.index \
+    db/kanji-N3/jlpt3_01.csv \
+    db/kanji-N3/jlpt3_02.csv \
+    db/kanji-N3/jlpt3_03.csv \
+    db/kanji-N3/jlpt3_04.csv \
+    db/kanji-N3/jlpt3_05.csv \
+    db/kanji-N3/jlpt3_06.csv \
+    db/kanji-N3/jlpt3_07.csv \
+    db/kanji-N3/jlpt3_08.csv \
+    db/kanji-N3/jlpt3_09.csv \
+    db/kanji-N3/jlpt3_10.csv \
+    db/kanji-N3/jlpt3_11.csv \
+    db/kanji-N3/jlpt3_12.csv \
+    db/kanji-N3/jlpt3_13.csv \
+    db/kanji-N3/jlpt3_14.csv \
+    db/kanji-N3/jlpt3_15.csv \
+    db/kanji-N3/jlpt3_16.csv \
+    db/kanji-N3/jlpt3_17.csv \
+    db/kanji-N3/jlpt3_18.csv \
+    db/kanji-N3/jlpt3_19.csv \
+    db/kanji-N3/jlpt3_20.csv \
+    db/kanji-N3/jlpt3_21.csv \
+    db/kanji-N3/jlpt3_22.csv \
+    db/kanji-N3/jlpt3_23.csv \
+    db/kanji-N3/jlpt3_24.csv \
+    db/kanji-N3/jlpt3_25.csv \
+    db/kanji-N3/jlpt3_26.csv \
+    db/kanji-N3/jlpt3_27.csv \
+    db/kanji-N3/jlpt3_28.csv \
+    db/kanji-N3/jlpt3_29.csv \
+    db/kanji-N3/jlpt3_30.csv \
+    db/kanji-N3/jlpt3_31.csv \
+    db/kanji-N3/jlpt3_32.csv \
+    db/kanji-N3/jlpt3_33.csv \
+    db/kanji-N3/jlpt3_34.csv \
+    db/kanji-N3/jlpt3_35.csv \
+    db/kanji-N3/jlpt3_36.csv \
+    db/kanji-N3/jlpt3_37.csv \
     db/vocabulary/01_answer \
     db/vocabulary/01_body_parts1 \
     db/vocabulary/01_body_parts2 \
@@ -154,6 +192,20 @@ DISTFILES += \
     db/vocabulary/misc6 \
     db/vocabulary/misc_actions \
     db/vocabulary/morning \
+    db/vocabulary-N3/00-all-n3.csv \
+    db/vocabulary-N3/01-work.csv \
+    db/vocabulary-N3/02-study.csv \
+    db/vocabulary-N3/03-house.csv \
+    db/vocabulary-N3/04-food.csv \
+    db/vocabulary-N3/05-health.csv \
+    db/vocabulary-N3/06-traveling.csv \
+    db/vocabulary-N3/07-money.csv \
+    db/vocabulary-N3/08-people.csv \
+    db/vocabulary-N3/09-nature.csv \
+    db/vocabulary-N3/10-time.csv \
+    db/vocabulary-N3/11-business.csv \
+    db/vocabulary-N3/12-media.csv \
+    db/vocabulary-N3.index \
     db/vocabulary/nature \
     db/vocabulary/nouns1 \
     db/vocabulary/nouns2 \
