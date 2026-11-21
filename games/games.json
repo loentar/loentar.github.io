@@ -1,0 +1,44 @@
+[
+	{
+		"author": "Loentar",
+		"description": "Software developer and 2D/3D artist",
+		"website": "https://loentar.moe/",
+		"hidden": false,
+		"games": [
+			{
+				"id": "snaily",
+				"icon": "https://loentar.moe/about/assets/snaily-icon.png",
+				"name": "Snaily",
+				"description": "A grid puzzle about a catsnail. Help Snaily to reach the exit, wear accessories and get a new catsnail friends.",
+				"landing": "https://loentar.moe/about/dev-snaily/",
+				"android": "https://play.google.com/store/apps/details?id=moe.loentar.snaily",
+				"ios": null,
+			},
+			{
+				"id": "shining_little",
+				"icon": "https://loentar.moe/about/assets/shining-little.webp",
+				"name": "Shining⭐Little",
+				"description": "Design and dress-up an adorable little characters! Share with friends, use as pretty avatar for your social profiles!",
+				"landing": "https://loentar.moe/sl/",
+				"android": "https://play.google.com/store/apps/details?id=personal.loentar.shininglittle",
+				"ios": null,
+			}
+		]
+	},
+	{
+		"author": "MyFavoriteColorIsGreen",
+		"description": "Mobile software developer",
+		"hidden": false,
+		"games": [
+			{
+				"id": "colormania",
+				"icon": "https://play-lh.googleusercontent.com/O9pdDPUZbkvsMkdbQFSF29Iurh1zy-Dc4Tt0-Wl3P42JCLlew5Wd5285szJMxLU6kyRQcN76P2p4-uAb4ziWAeA=w240-h480-rw",
+				"name": "ColorMania: Cube Blast",
+				"description": "Puzzle with cubes, tap 3 or more. Train your logic and relax your brain.",
+				"landing": null,
+				"android": "https://play.google.com/store/apps/details?id=com.mfcg.color.mania",
+				"ios": null,
+			}
+		]
+	}
+]
