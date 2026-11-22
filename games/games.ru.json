@@ -1,0 +1,44 @@
+[
+  {
+	"author": "Loentar",
+	"description": "Разработчик программного обеспечения и 2D/3D-художник",
+	"website": "https://loentar.moe/",
+	"hidden": false,
+	"games": [
+	  {
+		"id": "snaily",
+		"icon": "https://loentar.moe/about/assets/snaily-icon.png",
+		"name": "Snaily",
+		"description": "Помоги Снейли добраться до выхода, примеряй аксессуары и заводи новых друзей-котоулиток.",
+		"landing": "https://loentar.moe/about/dev-snaily/",
+		"android": "https://play.google.com/store/apps/details?id=moe.loentar.snaily",
+		"ios": null
+	  },
+	  {
+		"id": "shining_little",
+		"icon": "https://loentar.moe/about/assets/shining-little.webp",
+		"name": "Shining⭐Little",
+		"description": "Создавай и наряжай милых персонажей! Ставь их на аватар и делись с друзьями.",
+		"landing": "https://loentar.moe/sl/",
+		"android": "https://play.google.com/store/apps/details?id=personal.loentar.shininglittle",
+		"ios": null
+	  }
+	]
+  },
+  {
+	"author": "MyFavoriteColorIsGreen",
+	"description": "Разработчик мобильных приложений",
+	"hidden": false,
+	"games": [
+	  {
+		"id": "colormania",
+		"icon": "https://play-lh.googleusercontent.com/O9pdDPUZbkvsMkdbQFSF29Iurh1zy-Dc4Tt0-Wl3P42JCLlew5Wd5285szJMxLU6kyRQcN76P2p4-uAb4ziWAeA=w240-h480-rw",
+		"name": "ColorMania: Cube Blast",
+		"description": "Головоломка с кубиками: нажимай на 3 или больше. Тренируй логику и отдыхай.",
+		"landing": null,
+		"android": "https://play.google.com/store/apps/details?id=com.mfcg.color.mania",
+		"ios": null
+	  }
+	]
+  }
+]
