@@ -32,7 +32,7 @@
 	"games": [
 	  {
 		"id": "colormania",
-		"icon": "https://play-lh.googleusercontent.com/O9pdDPUZbkvsMkdbQFSF29Iurh1zy-Dc4Tt0-Wl3P42JCLlew5Wd5285szJMxLU6kyRQcN76P2p4-uAb4ziWAeA=w240-h480-rw",
+		"icon": "http://loentar.github.io/games/icons/colormania.webp",
 		"name": "ColorMania: Cube Blast",
 		"description": "Головоломка с кубиками: нажимай на 3 или больше. Тренируй логику и отдыхай.",
 		"landing": null,
