@@ -38,6 +38,15 @@
 		"landing": null,
 		"android": "https://play.google.com/store/apps/details?id=com.mfcg.color.mania",
 		"ios": null
+	  },
+          {
+		"id": "scepka",
+		"icon": "http://loentar.github.io/games/icons/scepka.webp",
+		"name": "Сцепка: игра в слова и фразы",
+		"description": "Сцепка — головоломка про живой русский язык. В каждой задаче две неполные фразы, и одно слово должно закончить обе сразу.",
+		"landing": null,
+		"android": "https://play.google.com/store/apps/details?id=com.mfcg.words.scepka",
+		"ios": null
 	  }
 	]
   }
