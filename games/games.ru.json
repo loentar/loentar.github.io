@@ -7,6 +7,7 @@
 	"games": [
 	  {
 		"id": "snaily",
+		"hidden": false,
 		"icon": "https://loentar.moe/about/assets/snaily-icon.png",
 		"name": "Snaily",
 		"description": "Помогай Снейли собирать лакомства, примеряй аксессуары и заводи милых друзей.",
@@ -16,6 +17,7 @@
 	  },
 	  {
 		"id": "shining_little",
+		"hidden": false,
 		"icon": "https://loentar.moe/about/assets/shining-little.webp",
 		"name": "Shining⭐Little",
 		"description": "Создавай и наряжай милых персонажей! Ставь их на аватар и делись с друзьями.",
@@ -32,6 +34,7 @@
 	"games": [
 	  {
 		"id": "colormania",
+		"hidden": false,
 		"icon": "http://loentar.github.io/games/icons/colormania.webp",
 		"name": "ColorMania: Cube Blast",
 		"description": "Головоломка с кубиками: нажимай на 3 или больше. Тренируй логику и отдыхай.",
@@ -41,6 +44,7 @@
 	  },
           {
 		"id": "scepka",
+		"hidden": false,
 		"icon": "http://loentar.github.io/games/icons/scepka.webp",
 		"name": "Сцепка: игра в слова и фразы",
 		"description": "Сцепка — головоломка про живой русский язык. В каждой задаче две неполные фразы, и одно слово должно закончить обе сразу.",
